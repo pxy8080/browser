@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/downing_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f5fa"
+    android:paddingVertical="10dp">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/video_frame"
+        android:layout_width="128dp"
+        android:layout_height="96dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="10dp"
+        android:background="#000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_failed_videoframe" />
+
+    <TextView
+        android:id="@+id/video_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/video_frame"
+        android:layout_alignBottom="@+id/video_frame"
+        android:layout_marginEnd="2dp"
+        android:background="#70000000"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/video_frame"
+        android:layout_alignBottom="@+id/video_frame"
+        android:layout_toEndOf="@+id/video_frame">
+
+        <TextView
+            android:id="@+id/item_file_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="50dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/task_progressbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="4dp"
+            android:layout_below="@+id/item_file_title"
+            android:layout_alignStart="@+id/item_file_title"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="50dp"
+            android:max="100"
+            android:orientation="horizontal"
+            android:progressDrawable="@drawable/bg_progress" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/downloaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fileSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/downloadingItemDownloadInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="50dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="等待中..."
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <!--下载过程删除按钮-->
+        <ImageView
+            android:id="@+id/StateImg"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:visibility="gone" />
+        <!--下载完成-更多-->
+        <ImageView
+            android:id="@+id/file_overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:padding="6dp"
+            android:src="@drawable/icon_overflow"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:padding="6dp"
+            android:src="@drawable/icon_video_unselected"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

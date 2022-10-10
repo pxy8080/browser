@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--背景颜色-->
+    <solid android:color="#ffffff" />
+    <!--分别设置左上，右上，左下，右下-->
+    <corners
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp"
+        android:topLeftRadius="35dp"
+        android:topRightRadius="35dp" />
+    <stroke
+        android:width="1dip"
+        android:color="#bababa" />
+</shape>

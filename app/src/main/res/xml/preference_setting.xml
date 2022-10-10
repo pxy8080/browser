@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--浏览器设置-->
+    <PreferenceCategory
+        android:title="@string/setting_title_browser"
+        app:initialExpandedChildrenCount="4">
+
+        <!--隐私-->
+        <Preference
+            android:key="settings_start"
+            android:title="@string/setting_title_profiles_privacy" />
+
+        <!--删除-->
+        <Preference
+            android:key="settings_clear"
+            android:title="@string/menu_delete" />
+
+        <!--起始页设置-->
+        <EditTextPreference
+            android:defaultValue="about:blank"
+            android:key="favoriteURL"
+            android:title="@string/setting_title_fav" />
+
+        <!--搜索引擎-->
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/setting_entries_search_engine"
+            android:entryValues="@array/setting_values_search_engine"
+            android:key="sp_search_engine"
+            android:title="@string/setting_title_search_engine" />
+
+        <!--自定义搜索引擎-->
+        <de.baumann.browser.preferences.EditTextSwitchPreference
+            android:key="sp_search_engine_custom"
+            android:selectable="true"
+            android:title="@string/setting_title_searchEngine"
+            app:editTextSwitchKey="searchEngineSwitch"
+            app:useSimpleSummaryProvider="true" />
+
+        <!--自定义User-Agent-->
+        <de.baumann.browser.preferences.EditTextSwitchPreference
+            android:key="sp_userAgent"
+            android:selectable="true"
+            android:title="@string/setting_title_userAgent"
+            app:editTextSwitchKey="userAgentSwitch"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <!--应用设置-->
+    <PreferenceCategory android:title="@string/setting_title_app">
+        <!--行为界面-->
+        <Preference
+            android:key="settings_ui"
+            android:title="@string/setting_title_ui" />
+        <!--书签过滤器-->
+        <Preference
+            android:key="settings_filter"
+            android:title="@string/setting_filter" />
+        <!--手势-->
+        <Preference
+            android:key="settings_gesture"
+            android:title="@string/setting_gestures" />
+        <!--备份-->
+        <Preference
+            android:key="settings_data"
+            android:title="@string/setting_title_data" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

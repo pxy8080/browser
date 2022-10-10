@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--    android:background="@drawable/bg_dialog_findvideo"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/detected_video_frame"
+                android:layout_width="96dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/black"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_failed_videoframe" />
+
+            <TextView
+                android:id="@+id/video_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/detected_video_frame"
+                android:layout_alignBottom="@+id/detected_video_frame"
+                android:layout_marginEnd="2dp"
+                android:background="#70000000"
+                android:textColor="#ffffff" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/detected_video_frame"
+                android:layout_alignBottom="@+id/detected_video_frame"
+                android:layout_marginEnd="15dp"
+                android:layout_toEndOf="@+id/detected_video_frame">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/detected_video_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:maxLines="2"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/detected_video_rename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detected_video_name"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:text="重命名" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/videolist_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll2"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/videolist_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_downnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/videolist_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="10dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#11aef5"
+            android:paddingHorizontal="40dp"
+            android:text="立即下载"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+
