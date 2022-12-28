@@ -1,10 +1,39 @@
-<!-- drawable/camera_outline.xml -->
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
+    android:width="27dp"
+    android:height="27dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
+
     <path
-        android:fillColor="#8f9ab3"
-        android:pathData="M20,4H16.83L15,2H9L7.17,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,18H4V6H8.05L9.88,4H14.12L15.95,6H20V18M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7M12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15Z" />
+        android:fillColor="@color/bottom_icon"
+        android:pathData="M20.5,6.5h-12C8,6.5,7.6,6.1,7.6,5.6S8,4.7,8.5,4.7h12c0.5,0,0.9,0.4,0.9,0.9 S21,6.5,20.5,6.5z" />
+    <path
+        android:fillColor="@color/bottom_icon"
+        android:pathData="M20.5,12.9h-12c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9h12c0.5,0,0.9,0.4,0.9,0.9 S21,12.9,20.5,12.9z" />
+    <path
+        android:fillColor="@color/bottom_icon"
+        android:pathData="M20.5,19.3h-12c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9h12c0.5,0,0.9,0.4,0.9,0.9 S21,19.3,20.5,19.3z" />
+    <path
+        android:fillColor="@color/bottom_icon"
+        android:pathData="M 3.8 4.4 C 4.4627416998 4.4 5 4.9372583002 5 5.6 C 5 6.2627416998 4.4627416998 6.8 3.8 6.8 C 3.1372583002 6.8 2.6 6.2627416998 2.6 5.6 C 2.6 4.9372583002 3.1372583002 4.4 3.8 4.4 Z" />
+    <path
+        android:fillColor="@color/bottom_icon"
+        android:pathData="M 3.8 10.8 C 4.4627416998 10.8 5 11.3372583002 5 12 C 5 12.6627416998 4.4627416998 13.2 3.8 13.2 C 3.1372583002 13.2 2.6 12.6627416998 2.6 12 C 2.6 11.3372583002 3.1372583002 10.8 3.8 10.8 Z" />
+    <path
+        android:fillColor="@color/bottom_icon"
+        android:pathData="M 3.8 17.2 C 4.4627416998 17.2 5 17.7372583002 5 18.4 C 5 19.0627416998 4.4627416998 19.6 3.8 19.6 C 3.1372583002 19.6 2.6 19.0627416998 2.6 18.4 C 2.6 17.7372583002 3.1372583002 17.2 3.8 17.2 Z" />
 </vector>
+
+<!--&lt;!&ndash; drawable/camera_outline.xml &ndash;&gt;-->
+<!--<vector xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:width="24dp"-->
+<!--    android:height="24dp"-->
+<!--    android:viewportWidth="24"-->
+<!--    android:viewportHeight="24">-->
+<!--    <path-->
+<!--        android:fillColor="#8f9ab3"-->
+<!--        android:pathData="1666601330058" class="icon" viewBox="0 0 1621 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1573" width="200" height="200"><path d="M43.946667 54.442667h1104.554666v928.938666H43.946667V54.442667zM1239.04 351.317333l351.829333-250.112v842.837334l-351.829333-255.829334V351.317333z" fill="#333333" p-id="1574" />-->
+<!--</vector>-->
+
+
